@@ -7,12 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33745dfc-ae86-4d50-9e39-fe8a858dd3a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/HorizontalMovementByMouse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/HorizontalMovementByMouse.cs.meta" afterDir="false" />
+    <list default="true" id="33745dfc-ae86-4d50-9e39-fe8a858dd3a7" name="Changes" comment="Добавил горизонтальное движение для удочки (FishingRod)">
+      <change afterPath="$PROJECT_DIR$/Assets/VerticalMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VerticalMovement.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +18,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -77,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640425647802</updated>
-      <workItem from="1640425655050" duration="2225000" />
+      <workItem from="1640425655050" duration="4191000" />
     </task>
     <task id="LOCAL-00001" summary="Создал пустой проект">
       <created>1640425732744</created>
@@ -93,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640425788247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавил горизонтальное движение для удочки (FishingRod)">
+      <created>1640428981152</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640428981152</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +125,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="movement" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -116,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Создал пустой проект" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создал пустой проект" />
+    <MESSAGE value="Добавил горизонтальное движение для удочки (FishingRod)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил горизонтальное движение для удочки (FishingRod)" />
   </component>
 </project>
