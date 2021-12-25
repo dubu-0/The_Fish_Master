@@ -1,0 +1,38 @@
+Index: .idea/.idea.The_Fish_Master/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"android.sdk.path\" value=\"$USER_HOME$/AppData/Local/Android/Sdk\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.The_Fish_Master/.idea/workspace.xml b/.idea/.idea.The_Fish_Master/.idea/workspace.xml
+--- a/.idea/.idea.The_Fish_Master/.idea/workspace.xml	(revision f2ef7fa1fd8403fb8a3b3f9ba3cf83249f199c80)
++++ b/.idea/.idea.The_Fish_Master/.idea/workspace.xml	(date 1640431811572)
+@@ -1,6 +1,26 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="425c0d45-284d-4900-881f-fff469c5dad2" name="Changes" comment="" />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
++  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="PropertiesComponent">
+     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+   </component>
++  <component name="TaskManager">
++    <servers />
++  </component>
++  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
++  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
++  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+ </project>
+\ No newline at end of file

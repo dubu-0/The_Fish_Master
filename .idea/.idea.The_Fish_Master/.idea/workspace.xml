@@ -7,11 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33745dfc-ae86-4d50-9e39-fe8a858dd3a7" name="Changes" comment="Добавил горизонтальное движение для удочки (FishingRod)">
-      <change afterPath="$PROJECT_DIR$/Assets/VerticalMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VerticalMovement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="425c0d45-284d-4900-881f-fff469c5dad2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +28,10 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Fish.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -111,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640428981152</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавил движение рыб, виды рыб, раскидал скрипты по папкам">
+      <created>1640443366499</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640443366499</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавил движение рыб, виды рыб, раскидал скрипты по папкам">
+      <created>1640446799766</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640446799766</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +145,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="movement" />
+                        <option value="fish_spawn" />
                       </list>
                     </value>
                   </entry>
@@ -147,6 +161,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Создал пустой проект" />
     <MESSAGE value="Добавил горизонтальное движение для удочки (FishingRod)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил горизонтальное движение для удочки (FishingRod)" />
+    <MESSAGE value="Добавил движение рыб, виды рыб, раскидал скрипты по папкам" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил движение рыб, виды рыб, раскидал скрипты по папкам" />
   </component>
 </project>
