@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="425c0d45-284d-4900-881f-fff469c5dad2" name="Changes" comment="" />
+    <list default="true" id="425c0d45-284d-4900-881f-fff469c5dad2" name="Changes" comment="Добавил спавн рыб. На своей глубине спавнится свой вид. Реализовал через ObjectPool.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectSpawner.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,8 +34,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Fish.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Ball/Ball.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Spawn/ObjectCatcher.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,10 +73,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11260">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="11260" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -83,12 +87,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="33745dfc-ae86-4d50-9e39-fe8a858dd3a7" name="Changes" comment="" />
+      <changelist id="425c0d45-284d-4900-881f-fff469c5dad2" name="Changes" comment="" />
       <created>1640425647802</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640425647802</updated>
       <workItem from="1640425655050" duration="4191000" />
+      <workItem from="1640446864178" duration="69000" />
+      <workItem from="1640512796752" duration="5287000" />
     </task>
     <task id="LOCAL-00001" summary="Создал пустой проект">
       <created>1640425732744</created>
@@ -125,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640446799766</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавил движение рыб, виды рыб, раскидал скрипты по папкам">
+      <created>1640446880868</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1640446880868</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавил спавн рыб. На своей глубине спавнится свой вид. Реализовал через ObjectPool.">
+      <created>1640517696824</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640517696824</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +182,7 @@
     <MESSAGE value="Создал пустой проект" />
     <MESSAGE value="Добавил горизонтальное движение для удочки (FishingRod)" />
     <MESSAGE value="Добавил движение рыб, виды рыб, раскидал скрипты по папкам" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил движение рыб, виды рыб, раскидал скрипты по папкам" />
+    <MESSAGE value="Добавил спавн рыб. На своей глубине спавнится свой вид. Реализовал через ObjectPool." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил спавн рыб. На своей глубине спавнится свой вид. Реализовал через ObjectPool." />
   </component>
 </project>

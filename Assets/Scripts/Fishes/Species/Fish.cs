@@ -1,7 +1,7 @@
 using Movement;
 using UnityEngine;
 
-namespace Fishes
+namespace Fishes.Species
 {
 	public abstract class Fish : MonoBehaviour
 	{
