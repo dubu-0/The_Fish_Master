@@ -4,25 +4,14 @@ namespace Movement
 {
 	public sealed class VerticalMovement
 	{
-		private Vector3 _currentPosition;
-		private float _velocity;
+		private readonly float _speed;
 
-		public VerticalMovement(float velocity, Vector3 currentPosition)
+		public VerticalMovement(float speed) => _speed = Mathf.Abs(speed);
+
+		public Vector3 SmoothStep(Vector3 currentPosition, float direction, float additionalSpeed = 0)
 		{
-			_velocity = velocity;
-			_currentPosition = currentPosition;
+			currentPosition.y += Mathf.Sign(direction) * (_speed + Mathf.Abs(additionalSpeed)) * Time.deltaTime;
+			return currentPosition;
 		}
-
-		public Vector3 SmoothStep()
-		{
-			_currentPosition.y += _velocity * Time.deltaTime;
-			return _currentPosition;
-		}
-
-		public void ChangeDirection() => _velocity = -_velocity;
-
-		public void MultiplySpeedBy(float value) => _velocity *= Mathf.Abs(value);
-
-		public void Stop() => _velocity *= 0;
 	}
 }

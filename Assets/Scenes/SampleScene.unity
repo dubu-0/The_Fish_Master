@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f0cbf112fd8a4587640b50a3c9b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalVelocity: -5
+  speed: 8
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +283,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7915ac50bb0aa054c9d89b2049be8399, type: 2}
   - {fileID: 11400000, guid: e56a141bf31229c45ba58c0b0ff6fdfd, type: 2}
   - {fileID: 11400000, guid: a395346457f837843bab6cdf662eb3b2, type: 2}
-  spawnRate: 10
 --- !u!4 &696803532
 Transform:
   m_ObjectHideFlags: 0
