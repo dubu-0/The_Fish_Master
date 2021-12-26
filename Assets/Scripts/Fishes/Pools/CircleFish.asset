@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CircleFish
   m_EditorClassIdentifier: 
   objectToPool: {fileID: 2504852788107160587, guid: eb8bb8cbebfd09b419a8743492b67850, type: 3}
-  amount: 15
-  <TopLevel>k__BackingField: -30
-  <BottomLevel>k__BackingField: -40
+  amount: 8
+  <TopLevel>k__BackingField: -60
+  <BottomLevel>k__BackingField: -80

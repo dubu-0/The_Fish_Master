@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SquareFish
   m_EditorClassIdentifier: 
   objectToPool: {fileID: 4910274394811296470, guid: c5dc9c40f2ab1fd4dade8ab01aa47224, type: 3}
-  amount: 15
-  <TopLevel>k__BackingField: -50
-  <BottomLevel>k__BackingField: -60
+  amount: 8
+  <TopLevel>k__BackingField: -90
+  <BottomLevel>k__BackingField: -110

@@ -10,6 +10,7 @@ namespace Fishes.Spawn
 		[SerializeField] private GameObject objectToPool;
 		[SerializeField] private int amount = 15;
 
+		private static readonly Vector3 CommonOffset = new Vector3(0f, -10f, 0f);
 		private readonly Queue<GameObject> _pool = new Queue<GameObject>();
 
 		[field: SerializeField] public int TopLevel { get; [UsedImplicitly] private set; }
@@ -25,10 +26,10 @@ namespace Fishes.Spawn
 			}
 		}
 
-		public void ReInitObject(Vector2 position)
+		public void ReInitObject(Vector3 position)
 		{
 			if (TryDequeuePooledObject(out var pooled))
-				pooled!.GetComponent<IPoolable>()?.ReInit(position);
+				pooled!.GetComponent<IPoolable>()?.ReInit(position + CommonOffset);
 		}
 
 		public void ReturnObjectToPool([NotNull] GameObject objectToReturn)
