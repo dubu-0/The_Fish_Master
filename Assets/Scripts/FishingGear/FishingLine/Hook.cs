@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using Core;
 using Fishes;
@@ -12,7 +11,7 @@ namespace FishingGear.FishingLine
     {
         private CircleCollider2D _circleCollider2D;
         private GameParameters _gameParameters;
-        private List<Fish> _caughtFishes = new List<Fish>();
+        private readonly List<Fish> _caughtFishes = new List<Fish>();
 
         public IEnumerable<Fish> CaughtFishes => _caughtFishes;
         

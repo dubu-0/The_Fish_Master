@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Немного пересмотрел логику рыб. Теперь вместо абстрактного класса Fish и кучи подвидов-наследников, будет один конкретный Mono-класс (тот же Fish), который будет &quot;висеть&quot; на всех рыбах">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameParameters.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameParameters.cs.meta" afterDir="false" />
+    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Теперь рыбки возвращаются назад, после того, как мы поднялись на верх">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CircleFish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CircleFish.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/SquareFish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishes/SquareFish.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/FishingLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/FishingLine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs" afterDir="false" />
     </list>
@@ -39,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/AttackState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IdleState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Ball/Ball.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Prefabs/Fishes/CapsuleFish.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/MovementState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Spawn/ObjectCatcher.cs" root0="SKIP_HIGHLIGHTING" />
@@ -78,10 +74,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14988">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="14988" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -105,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640540299199</updated>
       <workItem from="1640540306335" duration="228000" />
-      <workItem from="1640584996069" duration="14454000" />
+      <workItem from="1640584996069" duration="18360000" />
     </task>
     <task id="LOCAL-00002" summary="Добавил крюк и возможность хукать рыбок">
       <created>1640540522078</created>
@@ -121,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640585602619</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Теперь рыбки возвращаются назад, после того, как мы поднялись на верх">
+      <created>1640601858439</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640601858439</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +160,7 @@
     <MESSAGE value="Добавил 3 стадии рыбалки: сначала быстро опускаемся, потом медленно поднимаемся и затем снова быстро поднимаемся. Можно перезапускать" />
     <MESSAGE value="Добавил крюк и возможность хукать рыбок" />
     <MESSAGE value="Немного пересмотрел логику рыб. Теперь вместо абстрактного класса Fish и кучи подвидов-наследников, будет один конкретный Mono-класс (тот же Fish), который будет &quot;висеть&quot; на всех рыбах" />
-    <option name="LAST_COMMIT_MESSAGE" value="Немного пересмотрел логику рыб. Теперь вместо абстрактного класса Fish и кучи подвидов-наследников, будет один конкретный Mono-класс (тот же Fish), который будет &quot;висеть&quot; на всех рыбах" />
+    <MESSAGE value="Теперь рыбки возвращаются назад, после того, как мы поднялись на верх" />
+    <option name="LAST_COMMIT_MESSAGE" value="Теперь рыбки возвращаются назад, после того, как мы поднялись на верх" />
   </component>
 </project>
