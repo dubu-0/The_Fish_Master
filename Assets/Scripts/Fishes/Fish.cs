@@ -1,10 +1,11 @@
+using Fishes.Spawn;
 using Movement;
 using UnityEngine;
 
-namespace Fishes.Species
+namespace Fishes
 {
 	[RequireComponent(typeof(Collider2D))]
-	public abstract class Fish : MonoBehaviour
+	public sealed class Fish : MonoBehaviour, IPoolable
 	{
 		[SerializeField] private float maxSpeed;
 
@@ -14,7 +15,7 @@ namespace Fishes.Species
 		
 		private float CurrentSpeed { get; set; }
 
-		protected void Start()
+		private void Start()
 		{
 			var halfScreenWidth = Camera.main!.orthographicSize / 2;
 			_horizontalMovement = new HorizontalMovement(transform.localScale, halfScreenWidth);
@@ -25,7 +26,7 @@ namespace Fishes.Species
 			_collider = GetComponent<Collider2D>();
 		}
 
-		protected void Update()
+		private void Update()
 		{
 			if (_stopped) return;
 
@@ -40,5 +41,7 @@ namespace Fishes.Species
 			_stopped = true;
 			_collider.enabled = false;
 		}
+
+		public void ReInit(Vector3 position) => transform.position = position;
 	}
 }

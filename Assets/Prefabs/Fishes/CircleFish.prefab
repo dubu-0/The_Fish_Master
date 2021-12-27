@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2504852788107160820}
   - component: {fileID: 2504852788107160821}
   - component: {fileID: -6458442423714610679}
-  - component: {fileID: 2504852788107160586}
+  - component: {fileID: 3168547352282909090}
   m_Layer: 0
   m_Name: CircleFish
   m_TagString: Untagged
@@ -100,7 +100,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &2504852788107160586
+--- !u!114 &3168547352282909090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2504852788107160587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af22b28415731f448a5ce5a1593ec64d, type: 3}
+  m_Script: {fileID: 11500000, guid: c1ef1100d0ff0ce4baaebbcd418cb9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2

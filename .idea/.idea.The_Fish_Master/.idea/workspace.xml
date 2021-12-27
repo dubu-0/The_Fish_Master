@@ -6,17 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Добавил крюк и возможность хукать рыбок">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CircleFish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CircleFish.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/SquareFish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishes/SquareFish.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CapsuleFish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CapsuleFish.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CircleFish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CircleFish.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/SquareFish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/SquareFish.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/Fish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/FishingLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/FishingLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/HorizontalMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/HorizontalMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hook.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/CapsuleFish.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/CapsuleFish.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/CircleFish.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/CircleFish.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/Fish.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/SquareFish.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Species/SquareFish.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,9 +97,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640540299199</updated>
-      <workItem from="1640540306335" duration="194000" />
+      <workItem from="1640540306335" duration="228000" />
+      <workItem from="1640584996069" duration="355000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавил крюк и возможность хукать рыбок">
+      <created>1640540522078</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640540522078</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил 3 стадии рыбалки: сначала быстро опускаемся, потом медленно поднимаемся и затем снова быстро поднимаемся. Можно перезапускать" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил 3 стадии рыбалки: сначала быстро опускаемся, потом медленно поднимаемся и затем снова быстро поднимаемся. Можно перезапускать" />
+    <MESSAGE value="Добавил крюк и возможность хукать рыбок" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил крюк и возможность хукать рыбок" />
   </component>
 </project>
