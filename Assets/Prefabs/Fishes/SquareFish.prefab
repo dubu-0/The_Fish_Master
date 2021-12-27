@@ -123,3 +123,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 3
+  objectPool: {fileID: 11400000, guid: a395346457f837843bab6cdf662eb3b2, type: 2}

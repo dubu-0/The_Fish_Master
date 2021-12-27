@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  objectPool: {fileID: 11400000, guid: 7915ac50bb0aa054c9d89b2049be8399, type: 2}
 --- !u!1 &7181838103776064958
 GameObject:
   m_ObjectHideFlags: 0

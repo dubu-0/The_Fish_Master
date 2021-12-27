@@ -8,11 +8,13 @@ namespace Fishes
 	public sealed class Fish : MonoBehaviour, IPoolable
 	{
 		[SerializeField] private float maxSpeed;
+		[SerializeField] private ObjectPool objectPool;
 
 		private HorizontalMovement _horizontalMovement;
 		private bool _stopped;
 		private Collider2D _collider;
-		
+		private Transform _parent;
+
 		private float CurrentSpeed { get; set; }
 
 		private void Start()
@@ -24,6 +26,7 @@ namespace Fishes
 			CurrentSpeed = _horizontalMovement.GetRandomSpeed(maxSpeed * fraction, maxSpeed);
 			
 			_collider = GetComponent<Collider2D>();
+			_parent = transform.parent;
 		}
 
 		private void Update()
@@ -40,6 +43,14 @@ namespace Fishes
 		{
 			_stopped = true;
 			_collider.enabled = false;
+		}
+
+		public void ReturnToPool()
+		{
+			_stopped = false;
+			_collider.enabled = true;
+			transform.parent = _parent;
+			objectPool.ReturnObjectToPool(gameObject);
 		}
 
 		public void ReInit(Vector3 position) => transform.position = position;
