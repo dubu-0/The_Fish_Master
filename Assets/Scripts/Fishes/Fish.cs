@@ -1,24 +1,22 @@
 using Fishes.Spawn;
-using JetBrains.Annotations;
 using Movement;
 using UnityEngine;
 
 namespace Fishes
 {
 	[RequireComponent(typeof(Collider2D))]
-	public sealed partial class Fish : MonoBehaviour
+	public sealed class Fish : MonoBehaviour, IPoolable, IHookable
 	{
 		[SerializeField] private float maxSpeed;
-		[SerializeField] private ObjectPool objectPool;
-		private Collider2D _collider;
 
+		private Collider2D _collider;
 		private HorizontalMovement _horizontalMovement;
+		private ObjectPool _objectPool;
 		private Transform _parent;
 		private bool _stopped;
 
 		private float CurrentSpeed { get; set; }
-		[NotNull] public GameObject GameObject => gameObject;
-		
+
 		private void Start()
 		{
 			var halfScreenWidth = Camera.main!.orthographicSize / 2;
@@ -40,24 +38,27 @@ namespace Fishes
 			transform.localScale = newLookDirection;
 			transform.position = newPosition;
 		}
-	}
 
-	public sealed partial class Fish : IPoolable
-	{
-		public void ReInit(Vector3 position) => transform.position = position;
+		void IHookable.ChangeLocalPosition(Vector3 newPosition) => transform.localPosition = newPosition;
 
-		public void Stop()
+		void IHookable.ChangeParent(Transform newParent) => transform.parent = newParent;
+
+		void IHookable.Release()
+		{
+			_stopped = false;
+			_collider.enabled = true;
+			transform.parent = _parent;
+			_objectPool.ReturnObjectToPool(gameObject);
+		}
+		
+		void IStoppable.Stop()
 		{
 			_stopped = true;
 			_collider.enabled = false;
 		}
 
-		public void ReturnToPool()
-		{
-			_stopped = false;
-			_collider.enabled = true;
-			transform.parent = _parent;
-			objectPool.ReturnObjectToPool(gameObject);
-		}
+		void IPoolable.ReInit(Vector3 position) => transform.position = position;
+
+		void IPoolable.SetObjectPool(ObjectPool pool) => _objectPool = pool;
 	}
 }

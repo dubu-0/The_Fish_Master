@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
@@ -15,12 +16,19 @@ namespace Fishes.Spawn
 		[field: SerializeField] public int TopLevel { get; [UsedImplicitly] private set; }
 		[field: SerializeField] public int BottomLevel { get; [UsedImplicitly] private set; }
 
+		private void OnValidate()
+		{
+			if (objectToPool.GetComponent<IPoolable>() == null)
+				throw new Exception("ObjectPool contains non-poolable item.\n objectToPool.GetComponent<IPoolable>() == null");
+		}
+
 		public void Init(Transform parentForObjects)
 		{
 			for (var i = 0; i < amount; i++)
 			{
 				var objectInstance = Instantiate(objectToPool, parentForObjects, true);
 				objectInstance.SetActive(false);
+				objectInstance.GetComponent<IPoolable>()?.SetObjectPool(this);
 				_pool.Enqueue(objectInstance);
 			}
 		}

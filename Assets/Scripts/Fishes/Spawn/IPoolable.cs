@@ -2,12 +2,9 @@
 
 namespace Fishes.Spawn
 {
-	public interface IPoolable : IStoppable
+	public interface IPoolable
 	{
-		public GameObject GameObject { get; }
-		
 		public void ReInit(Vector3 position);
-
-		public void ReturnToPool();
+		public void SetObjectPool(ObjectPool pool);
 	}
 }

@@ -1,4 +1,4 @@
-﻿namespace Fishes.Spawn
+﻿namespace Fishes
 {
 	public interface IStoppable
 	{

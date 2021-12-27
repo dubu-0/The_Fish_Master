@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Fishes.Spawn;
+using Fishes;
 using JetBrains.Annotations;
 using UnityEngine;
 
@@ -8,10 +8,10 @@ namespace FishingGear.FishingLine
 	[RequireComponent(typeof(CircleCollider2D))]
 	public sealed class Hook : MonoBehaviour
 	{
-		private readonly List<IPoolable> _caught = new List<IPoolable>();
+		private readonly List<IHookable> _caught = new List<IHookable>();
 		private CircleCollider2D _circleCollider2D;
 
-		public IEnumerable<IPoolable> Caught => _caught;
+		public IEnumerable<IHookable> Caught => _caught;
 
 		private void Start()
 		{
@@ -21,10 +21,10 @@ namespace FishingGear.FishingLine
 
 		private void OnTriggerEnter2D([NotNull] Collider2D col)
 		{
-			var poolable = col.gameObject.GetComponent<IPoolable>();
-			if (poolable == null) return;
+			var hookable = col.gameObject.GetComponent<IHookable>();
+			if (hookable == null) return;
 
-			Catch(poolable);
+			Catch(hookable);
 		}
 
 		public void EnableCollider() => _circleCollider2D.enabled = true;
@@ -33,16 +33,16 @@ namespace FishingGear.FishingLine
 
 		public void Release()
 		{
-			_caught.ForEach(poolable => poolable.ReturnToPool());
+			_caught.ForEach(hookable => hookable.Release());
 			_caught.Clear();
 		}
 
-		private void Catch([NotNull] IPoolable poolable)
+		private void Catch([NotNull] IHookable hookable)
 		{
-			poolable.GameObject.transform.parent = transform;
-			poolable.GameObject.transform.localPosition = new Vector3(3, 0, 0);
-			poolable.Stop();
-			_caught.Add(poolable);
+			hookable.ChangeParent(transform);
+			hookable.ChangeLocalPosition(new Vector3(3, 0, 0));
+			hookable.Stop();
+			_caught.Add(hookable);
 		}
 	}
 }
