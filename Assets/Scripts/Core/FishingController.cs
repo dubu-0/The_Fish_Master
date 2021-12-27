@@ -40,7 +40,7 @@ namespace Core
 
 			yield return StartCoroutine(MoveUpFast(50f));
 
-			hook.ReleaseFishes();
+			hook.Release();
 
 			_fishing = null;
 		}
@@ -57,8 +57,8 @@ namespace Core
 
 		private IEnumerator MoveUpSlow(float speed)
 		{
-			StartCoroutine(_main.transform.MoveY(goesUpTo, speed, () => hook.CaughtFishes.Count() >= _gameParameters.Strength));
-			yield return StartCoroutine(fishingLine.transform.MoveY(goesUpTo, speed, () => hook.CaughtFishes.Count() >= _gameParameters.Strength));
+			StartCoroutine(_main.transform.MoveY(goesUpTo, speed, () => hook.Caught.Count() >= _gameParameters.Strength));
+			yield return StartCoroutine(fishingLine.transform.MoveY(goesUpTo, speed, () => hook.Caught.Count() >= _gameParameters.Strength));
 		}
 
 		private IEnumerator MoveUpFast(float speed)

@@ -1,11 +1,12 @@
 using Fishes.Spawn;
+using JetBrains.Annotations;
 using Movement;
 using UnityEngine;
 
 namespace Fishes
 {
 	[RequireComponent(typeof(Collider2D))]
-	public sealed class Fish : MonoBehaviour, IPoolable
+	public sealed partial class Fish : MonoBehaviour
 	{
 		[SerializeField] private float maxSpeed;
 		[SerializeField] private ObjectPool objectPool;
@@ -16,7 +17,8 @@ namespace Fishes
 		private bool _stopped;
 
 		private float CurrentSpeed { get; set; }
-
+		[NotNull] public GameObject GameObject => gameObject;
+		
 		private void Start()
 		{
 			var halfScreenWidth = Camera.main!.orthographicSize / 2;
@@ -38,7 +40,10 @@ namespace Fishes
 			transform.localScale = newLookDirection;
 			transform.position = newPosition;
 		}
+	}
 
+	public sealed partial class Fish : IPoolable
+	{
 		public void ReInit(Vector3 position) => transform.position = position;
 
 		public void Stop()
