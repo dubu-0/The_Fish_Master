@@ -7,10 +7,9 @@ namespace Fishes.Spawn
 	[CreateAssetMenu(menuName = "Create ObjectPool", fileName = "ObjectPool", order = 0)]
 	public sealed class ObjectPool : ScriptableObject
 	{
+		private static readonly Vector3 CommonOffset = new Vector3(0f, -10f, 0f);
 		[SerializeField] private GameObject objectToPool;
 		[SerializeField] private int amount = 15;
-
-		private static readonly Vector3 CommonOffset = new Vector3(0f, -10f, 0f);
 		private readonly Queue<GameObject> _pool = new Queue<GameObject>();
 
 		[field: SerializeField] public int TopLevel { get; [UsedImplicitly] private set; }

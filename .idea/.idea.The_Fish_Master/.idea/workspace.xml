@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Теперь рыбки возвращаются назад, после того, как мы поднялись на верх">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs.meta" afterDir="false" />
+    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Вынес логику запуска рыбалки из FishingLine.cs в отдельный класс FishingController.cs">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameParameters.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/FishingLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/FishingLine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/VerticalMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/VerticalMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +32,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Fish.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -101,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640540299199</updated>
       <workItem from="1640540306335" duration="228000" />
-      <workItem from="1640584996069" duration="18360000" />
+      <workItem from="1640584996069" duration="26138000" />
     </task>
     <task id="LOCAL-00002" summary="Добавил крюк и возможность хукать рыбок">
       <created>1640540522078</created>
@@ -124,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640601858439</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Вынес логику запуска рыбалки из FishingLine.cs в отдельный класс FishingController.cs">
+      <created>1640605888158</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640605888158</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +176,7 @@
     <MESSAGE value="Добавил крюк и возможность хукать рыбок" />
     <MESSAGE value="Немного пересмотрел логику рыб. Теперь вместо абстрактного класса Fish и кучи подвидов-наследников, будет один конкретный Mono-класс (тот же Fish), который будет &quot;висеть&quot; на всех рыбах" />
     <MESSAGE value="Теперь рыбки возвращаются назад, после того, как мы поднялись на верх" />
-    <option name="LAST_COMMIT_MESSAGE" value="Теперь рыбки возвращаются назад, после того, как мы поднялись на верх" />
+    <MESSAGE value="Вынес логику запуска рыбалки из FishingLine.cs в отдельный класс FishingController.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Вынес логику запуска рыбалки из FishingLine.cs в отдельный класс FishingController.cs" />
   </component>
 </project>

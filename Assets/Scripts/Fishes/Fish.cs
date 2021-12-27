@@ -9,11 +9,11 @@ namespace Fishes
 	{
 		[SerializeField] private float maxSpeed;
 		[SerializeField] private ObjectPool objectPool;
+		private Collider2D _collider;
 
 		private HorizontalMovement _horizontalMovement;
-		private bool _stopped;
-		private Collider2D _collider;
 		private Transform _parent;
+		private bool _stopped;
 
 		private float CurrentSpeed { get; set; }
 
@@ -24,7 +24,7 @@ namespace Fishes
 
 			const float fraction = 0.5f;
 			CurrentSpeed = _horizontalMovement.GetRandomSpeed(maxSpeed * fraction, maxSpeed);
-			
+
 			_collider = GetComponent<Collider2D>();
 			_parent = transform.parent;
 		}
@@ -39,6 +39,8 @@ namespace Fishes
 			transform.position = newPosition;
 		}
 
+		public void ReInit(Vector3 position) => transform.position = position;
+
 		public void Stop()
 		{
 			_stopped = true;
@@ -52,7 +54,5 @@ namespace Fishes
 			transform.parent = _parent;
 			objectPool.ReturnObjectToPool(gameObject);
 		}
-
-		public void ReInit(Vector3 position) => transform.position = position;
 	}
 }
