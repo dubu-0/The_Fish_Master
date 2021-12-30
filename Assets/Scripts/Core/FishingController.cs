@@ -8,19 +8,15 @@ namespace Core
 {
 	public sealed class FishingController : MonoBehaviour
 	{
+		[SerializeField] private GameParameters gameParameters;
 		[SerializeField] private FishingLine fishingLine;
 		[SerializeField] private Hook hook;
 		[SerializeField] [Range(-30f, -50f)] private float goesUpTo;
 
 		private Coroutine _fishing;
-		private GameParameters _gameParameters;
 		private Camera _main;
 
-		private void Start()
-		{
-			_gameParameters = new GameParameters();
-			_main = Camera.main;
-		}
+		private void Start() => _main = Camera.main;
 
 		private void Update()
 		{
@@ -30,38 +26,38 @@ namespace Core
 
 		private IEnumerator Fishing()
 		{
-			yield return StartCoroutine(MoveDownFast(100f));
+			yield return StartCoroutine(MovingDownFast(100f));
 
 			hook.EnableCollider();
 
-			yield return StartCoroutine(MoveUpSlow(8f));
+			yield return StartCoroutine(MovingUpSlow(8f));
 
 			hook.DisableCollider();
 
-			yield return StartCoroutine(MoveUpFast(50f));
+			yield return StartCoroutine(MovingUpFast(50f));
 
 			hook.Release();
 
 			_fishing = null;
 		}
 
-		private IEnumerator MoveDownFast(float speed)
+		private IEnumerator MovingDownFast(float speed)
 		{
 			var offsetY = fishingLine.transform.position.y * 0.35f;
 
 			yield return StartCoroutine(_main.transform.MoveY(fishingLine.transform.position.y + offsetY, speed));
 
-			StartCoroutine(_main.transform.MoveY(-_gameParameters.Length + offsetY, speed));
-			yield return StartCoroutine(fishingLine.transform.MoveY(-_gameParameters.Length, speed));
+			StartCoroutine(_main.transform.MoveY(-gameParameters.Length + offsetY, speed));
+			yield return StartCoroutine(fishingLine.transform.MoveY(-gameParameters.Length, speed));
 		}
 
-		private IEnumerator MoveUpSlow(float speed)
+		private IEnumerator MovingUpSlow(float speed)
 		{
-			StartCoroutine(_main.transform.MoveY(goesUpTo, speed, () => hook.Caught.Count() >= _gameParameters.Strength));
-			yield return StartCoroutine(fishingLine.transform.MoveY(goesUpTo, speed, () => hook.Caught.Count() >= _gameParameters.Strength));
+			StartCoroutine(_main.transform.MoveY(goesUpTo, speed, () => hook.Caught.Count() >= gameParameters.Strength));
+			yield return StartCoroutine(fishingLine.transform.MoveY(goesUpTo, speed, () => hook.Caught.Count() >= gameParameters.Strength));
 		}
 
-		private IEnumerator MoveUpFast(float speed)
+		private IEnumerator MovingUpFast(float speed)
 		{
 			StartCoroutine(_main.transform.MoveY(fishingLine.StartingPosition.y, speed));
 			yield return StartCoroutine(fishingLine.transform.MoveY(fishingLine.StartingPosition.y, speed));

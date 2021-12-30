@@ -1,17 +1,15 @@
-﻿namespace Core
+﻿using JetBrains.Annotations;
+using UnityEngine;
+
+namespace Core
 {
-	public sealed class GameParameters
+	[CreateAssetMenu(menuName = "Create GameParameters", fileName = "GameParameters", order = 0)]
+	public sealed class GameParameters : ScriptableObject
 	{
 		private const int DefaultStrength = 3;
 		private const int DefaultLength = 100;
 
-		private static int _strength = DefaultStrength;
-		private static int _length = DefaultLength;
-
-		public int Strength => _strength;
-		public int Length => _length;
-
-		public void IncreaseStrength() => _strength++;
-		public void IncreaseLength() => _length += 10;
+		[field: SerializeField] public int Strength { get; [UsedImplicitly] private set; } = DefaultStrength;
+		[field: SerializeField] public int Length { get; [UsedImplicitly] private set; } = DefaultLength;
 	}
 }

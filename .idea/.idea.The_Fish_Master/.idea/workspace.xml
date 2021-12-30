@@ -7,16 +7,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="В TransformExtension.cs вместо 3-х методов сделал 1">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/IHookable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/IHookable.cs.meta" afterDir="false" />
+    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/IPoolable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/IPoolable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/IStoppable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/IStoppable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/IStoppable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/IStoppable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameParameters.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CapsuleFish.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CapsuleFish.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CircleFish.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CircleFish.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/SquareFish.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/SquareFish.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/TransformExtension.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/TransformExtension.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,31 +38,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/FishingGear/FishingLine/FishingLine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/State.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/AttackState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Fish.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IdleState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Fish.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Fish.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/FishingGear/FishingLine/FishingLine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Ball/Ball.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/MovementState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Core/FishingController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Spawn/ObjectCatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/Control/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Spawn/IPoolable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Fish.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Core/FishingController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Ball/Ball.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Prefabs/Fishes/CapsuleFish.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Core/FishingController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/FishingGear/FishingLine/Hook.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,10 +82,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14988">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14988" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />

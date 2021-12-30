@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e60dd0b1cd4ebdba8c3316e204bada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameParameters: {fileID: 11400000, guid: df3954c5fd06aed459dad5a03fa74bc9, type: 2}
   fishingLine: {fileID: 867211143}
   hook: {fileID: 711302578}
   goesUpTo: -30
