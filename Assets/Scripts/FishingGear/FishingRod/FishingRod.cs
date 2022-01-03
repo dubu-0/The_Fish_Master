@@ -1,4 +1,3 @@
-using Movement;
 using UnityEngine;
 
 namespace FishingGear.FishingRod

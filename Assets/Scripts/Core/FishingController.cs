@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Linq;
 using FishingGear.FishingLine;
-using Movement;
 using UnityEngine;
 
 namespace Core

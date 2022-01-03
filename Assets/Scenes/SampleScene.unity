@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 696803532}
   - component: {fileID: 696803531}
   m_Layer: 0
-  m_Name: Object Spawner
+  m_Name: Fish Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,13 +279,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 696803530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c4625804f6200b4491e9cfd7aa7afa3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f2d8c4edada4897b433a932ec060364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPools:
-  - {fileID: 11400000, guid: 7915ac50bb0aa054c9d89b2049be8399, type: 2}
-  - {fileID: 11400000, guid: e56a141bf31229c45ba58c0b0ff6fdfd, type: 2}
-  - {fileID: 11400000, guid: a395346457f837843bab6cdf662eb3b2, type: 2}
+  prefabs:
+  - {fileID: 4943411855792682961, guid: 861979523fec5f041a73b81c836d4654, type: 3}
+  - {fileID: 3168547352282909090, guid: eb8bb8cbebfd09b419a8743492b67850, type: 3}
+  - {fileID: 4910274394811296471, guid: c5dc9c40f2ab1fd4dade8ab01aa47224, type: 3}
+  amountInEachPool: 8
+  spawnConstraints:
+    <MinY>k__BackingField: -30
+    <MaxY>k__BackingField: -15
+    <Step>k__BackingField: -30
 --- !u!4 &696803532
 Transform:
   m_ObjectHideFlags: 0

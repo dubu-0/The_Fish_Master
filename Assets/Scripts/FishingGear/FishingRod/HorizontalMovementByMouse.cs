@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace Movement
+namespace FishingGear.FishingRod
 {
-	public sealed class HorizontalMovementByMouse
+	public struct HorizontalMovementByMouse
 	{
 		private readonly Camera _camera;
 		private Vector3 _currentPosition;

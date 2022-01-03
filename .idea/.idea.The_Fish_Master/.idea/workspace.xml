@@ -7,19 +7,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="">
+    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Небольшое переименование и удаление лишнего">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/IPool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/IPool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/Pool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/Pool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/PooledObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/PooledObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/SpawnConstraints.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/SpawnConstraints.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/Spawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/Spawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pools.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pools/CapsuleFish.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pools/CapsuleFish.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pools/CircleFish.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pools/CircleFish.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pools/SquareFish.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pools/SquareFish.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/FishingController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameParameters.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CapsuleFish.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CapsuleFish.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CircleFish.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/CircleFish.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/SquareFish.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Pools/SquareFish.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/TransformExtension.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/TransformExtension.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Fish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/IHookable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/IHookable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/IStoppable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/IStoppable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/IPoolable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/IPoolable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectPool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishes/Spawn/ObjectSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingLine/Hook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingRod/FishingRod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingRod/FishingRod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/HorizontalMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/HorizontalMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/HorizontalMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishes/HorizontalMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/HorizontalMovementByMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingRod/HorizontalMovementByMouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/HorizontalMovementByMouse.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingGear/FishingRod/HorizontalMovementByMouse.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/TransformExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/TransformExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/TransformExtension.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/TransformExtension.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,16 +68,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/State.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/57/ab6aa5d0/ICollection`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/AttackState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IdleState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/FishingGear/FishingLine/FishingLine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Ball/Ball.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/MovementState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/b9/2583d81d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Core/FishingController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/Spawn/ObjectSpawner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Spawn/ObjectCatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/Control/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishes/Fish.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/Spawn/Pool.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,7 +98,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="RiderCSharpLiveTemplatesSettingsId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -82,10 +112,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16932">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="16932" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -110,6 +140,9 @@
       <updated>1640540299199</updated>
       <workItem from="1640540306335" duration="228000" />
       <workItem from="1640584996069" duration="31244000" />
+      <workItem from="1640844069507" duration="30040000" />
+      <workItem from="1641066341939" duration="70000" />
+      <workItem from="1641211972271" duration="20599000" />
     </task>
     <task id="LOCAL-00002" summary="Добавил крюк и возможность хукать рыбок">
       <created>1640540522078</created>
@@ -153,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640617963714</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Небольшое переименование и удаление лишнего">
+      <created>1640844685274</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640844685274</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +233,7 @@
     <MESSAGE value="Вынес логику запуска рыбалки из FishingLine.cs в отдельный класс FishingController.cs" />
     <MESSAGE value="Добавил движение камеры вместе с леской" />
     <MESSAGE value="В TransformExtension.cs вместо 3-х методов сделал 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="В TransformExtension.cs вместо 3-х методов сделал 1" />
+    <MESSAGE value="Небольшое переименование и удаление лишнего" />
+    <option name="LAST_COMMIT_MESSAGE" value="Небольшое переименование и удаление лишнего" />
   </component>
 </project>

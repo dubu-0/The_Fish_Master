@@ -3,7 +3,7 @@ using System.Collections;
 using JetBrains.Annotations;
 using UnityEngine;
 
-namespace Movement
+namespace Core
 {
 	public static class TransformExtension
 	{
@@ -25,7 +25,7 @@ namespace Movement
 			transform.position = position;
 		}
 
-		private static class VerticalMovement
+		private struct VerticalMovement
 		{
 			public static Vector3 SmoothStep(Vector3 currentPosition, float direction, float speed)
 			{

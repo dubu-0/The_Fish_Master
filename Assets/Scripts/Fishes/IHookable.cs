@@ -2,10 +2,10 @@
 
 namespace Fishes
 {
-	public interface IHookable : IStoppable
+	public interface IHookable
 	{
 		public void ChangeLocalPosition(Vector3 newPosition);
 		public void ChangeParent(Transform newParent);
-		public void Release();
+		public void Stop();
 	}
 }

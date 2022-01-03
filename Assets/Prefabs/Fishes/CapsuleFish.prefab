@@ -113,8 +113,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ef1100d0ff0ce4baaebbcd418cb9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onBecameInactive:
+    m_PersistentCalls:
+      m_Calls: []
   maxSpeed: 1
-  objectPool: {fileID: 11400000, guid: 7915ac50bb0aa054c9d89b2049be8399, type: 2}
 --- !u!1 &7181838103776064958
 GameObject:
   m_ObjectHideFlags: 0

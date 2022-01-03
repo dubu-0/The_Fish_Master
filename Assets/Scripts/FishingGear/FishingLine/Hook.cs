@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Fishes;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace FishingGear.FishingLine
 {
@@ -28,14 +29,10 @@ namespace FishingGear.FishingLine
 		}
 
 		public void EnableCollider() => _circleCollider2D.enabled = true;
-
 		public void DisableCollider() => _circleCollider2D.enabled = false;
 
-		public void Release()
-		{
-			_caught.ForEach(hookable => hookable.Release());
-			_caught.Clear();
-		}
+		public void Release() => SceneManager.LoadScene
+			(SceneManager.GetActiveScene().name); // TODO поменять, когда будет реализован переход между сценами
 
 		private void Catch([NotNull] IHookable hookable)
 		{
