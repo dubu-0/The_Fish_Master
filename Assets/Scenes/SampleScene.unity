@@ -286,7 +286,7 @@ MonoBehaviour:
   - {fileID: 4943411855792682961, guid: 861979523fec5f041a73b81c836d4654, type: 3}
   - {fileID: 3168547352282909090, guid: eb8bb8cbebfd09b419a8743492b67850, type: 3}
   - {fileID: 4910274394811296471, guid: c5dc9c40f2ab1fd4dade8ab01aa47224, type: 3}
-  amountInEachPool: 8
+  amountInEachPool: 3
   spawnConstraints:
     <MinY>k__BackingField: -30
     <MaxY>k__BackingField: -15
