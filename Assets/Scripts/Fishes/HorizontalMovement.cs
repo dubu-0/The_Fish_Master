@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Fishes
 {
-	public struct HorizontalMovement
+	public sealed class HorizontalMovement
 	{
 		private readonly float _halfScreenWidth;
 		private Vector3 _currentLocalScale;

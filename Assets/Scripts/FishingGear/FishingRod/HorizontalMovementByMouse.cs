@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace FishingGear.FishingRod
 {
-	public struct HorizontalMovementByMouse
+	public sealed class HorizontalMovementByMouse
 	{
 		private readonly Camera _camera;
 		private Vector3 _currentPosition;
