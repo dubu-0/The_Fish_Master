@@ -123,4 +123,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 3
-  objectPool: {fileID: 11400000, guid: a395346457f837843bab6cdf662eb3b2, type: 2}
+  _camera: {fileID: 6761737429542053380, guid: 88ee015afe484c04d8895ce3ede234b0, type: 3}
