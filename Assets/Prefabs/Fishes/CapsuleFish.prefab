@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
-  _camera: {fileID: 6761737429542053380, guid: 88ee015afe484c04d8895ce3ede234b0, type: 3}
+  _cost: 10
 --- !u!1 &7181838103776064958
 GameObject:
   m_ObjectHideFlags: 0

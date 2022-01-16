@@ -25,6 +25,14 @@ namespace GameParameters
             return parameter;
         }
 
+        public void ToDefaults()
+        {
+            foreach (var gameParameter in _gameParameters)
+            {
+                gameParameter.ToDefault();
+            }
+        }
+
         private void InitializeDictionary()
         {
             _parametersAndTheirTypes = new Dictionary<Type, GameParameterBase>();

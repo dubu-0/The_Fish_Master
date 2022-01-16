@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3816dea09cf146f6a652c933cb720e47, type: 3}
-  m_Name: Length
+  m_Script: {fileID: 11500000, guid: d67f5989000e4faaabe0e4accac6c424, type: 3}
+  m_Name: Money
   m_EditorClassIdentifier: 
-  _value: 100
-  _money: {fileID: 11400000, guid: 719102f371c65af44a7e3e62df066e97, type: 2}
-  _cost: 100
-  _costRateOfChange: 1.2
+  _value: 10000

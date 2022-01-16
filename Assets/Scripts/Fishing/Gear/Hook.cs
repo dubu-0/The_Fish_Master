@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Fishing.Fishes;
+using GameParameters;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,8 @@ namespace Fishing.Gear
 	[RequireComponent(typeof(Collider2D))]
 	public sealed class Hook : MonoBehaviour
 	{
+		[SerializeField] private Money _money;
+
 		private readonly List<Fish> _caught = new List<Fish>();
 		private Collider2D _hookCollider;
 
@@ -36,6 +39,7 @@ namespace Fishing.Gear
 			fish.SetNewParent(hook);
 			fish.SetLocalPosition(new Vector3(3, 0, 0));
 			fish.Stop();
+			fish.IncreaseMoney(_money);
 			_caught.Add(fish);
 		}
 	}

@@ -113,4 +113,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
-  _camera: {fileID: 6761737429542053380, guid: 88ee015afe484c04d8895ce3ede234b0, type: 3}
+  _cost: 20

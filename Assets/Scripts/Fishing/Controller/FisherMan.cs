@@ -15,14 +15,12 @@ namespace Fishing.Controller
 
 		private void Update()
 		{
-			StartFishing(when: Input.GetMouseButtonDown(0) && FishingIsNotStarted());
 			StopFishing(when: HookHasMaximumFishes());
 		}
 
-		private void StartFishing(bool when)
+		public void StartFishing()
 		{
-			if (!when) return;
-			
+			if (IsFishingStarted()) return;
 			_fishingSequence = BuildNewSequence(DOTween.Sequence());
 		}
 
@@ -38,12 +36,12 @@ namespace Fishing.Controller
 			void DisableHookCollider() => _hook.DisableCollider();
 		}
 
-		private bool FishingIsNotStarted() => _fishingSequence == null;
+		private bool IsFishingStarted() => _fishingSequence != null;
 
 		private bool HookHasMaximumFishes()
 		{
 			var strength = _gameParametersContainer.GetParameterByType<Strength>();
-			return _hook.CaughtCount >= strength.Value;
+			return _hook.CaughtCount >= strength.GetValue;
 		}
 
 		private Sequence BuildNewSequence(Sequence newSequence)
@@ -52,10 +50,10 @@ namespace Fishing.Controller
 			var movingDownDuration = _gameParametersContainer.GetParameterByType<MovingDownDuration>();
 			var movingUpDuration = _gameParametersContainer.GetParameterByType<MovingUpDuration>();
 			
-			newSequence.Append(_fishingLine.BuildMovingSequence(-length.Value, movingDownDuration.Value, Ease.Linear)
+			newSequence.Append(_fishingLine.BuildMovingSequence(-length.GetValue, movingDownDuration.GetValue, Ease.Linear)
 				.OnComplete(() => _hook.EnableCollider()));
                 
-			newSequence.Append(_fishingLine.BuildMovingSequence(0, movingUpDuration.Value, Ease.Linear)
+			newSequence.Append(_fishingLine.BuildMovingSequence(0, movingUpDuration.GetValue, Ease.Linear)
 				.OnComplete(() => _hook.Release()));
 
 			return newSequence;

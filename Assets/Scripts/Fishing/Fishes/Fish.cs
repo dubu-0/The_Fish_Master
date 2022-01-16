@@ -1,5 +1,6 @@
 using Fishing.Fishes.Spawn;
 using Fishing.Movement;
+using GameParameters;
 using UnityEngine;
 
 namespace Fishing.Fishes
@@ -8,6 +9,7 @@ namespace Fishing.Fishes
 	public sealed class Fish : PooledObjectBase
 	{
 		[SerializeField] private float maxSpeed;
+		[SerializeField] private float _cost;
 
 		private Collider2D _collider;
 		private HorizontalMovement _horizontalMovement;
@@ -28,6 +30,8 @@ namespace Fishing.Fishes
 			PingPong();
 		}
 
+		public void IncreaseMoney(Money money) => money.IncreaseBy(_cost);
+		
 		public void SetLocalPosition(Vector3 newLocalPosition) => transform.localPosition = newLocalPosition;
 
 		public void SetNewParent(Transform newParent) => transform.parent = newParent;
