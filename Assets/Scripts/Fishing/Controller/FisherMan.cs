@@ -21,7 +21,7 @@ namespace Fishing.Controller
 		public void StartFishing()
 		{
 			if (IsFishingStarted()) return;
-			_fishingSequence = BuildNewSequence(DOTween.Sequence());
+			_fishingSequence = BuildNewSequence(DOTween.Sequence(), Ease.InSine);
 		}
 
 		private void StopFishing(bool when)
@@ -44,16 +44,16 @@ namespace Fishing.Controller
 			return _hook.CaughtCount >= strength.GetValue;
 		}
 
-		private Sequence BuildNewSequence(Sequence newSequence)
+		private Sequence BuildNewSequence(Sequence newSequence, Ease ease)
 		{
 			var length = _gameParametersContainer.GetParameterByType<Length>();
 			var movingDownDuration = _gameParametersContainer.GetParameterByType<MovingDownDuration>();
 			var movingUpDuration = _gameParametersContainer.GetParameterByType<MovingUpDuration>();
 			
-			newSequence.Append(_fishingLine.BuildMovingSequence(-length.GetValue, movingDownDuration.GetValue, Ease.Linear)
+			newSequence.Append(_fishingLine.BuildMovingSequence(-length.GetValue, movingDownDuration.GetValue, ease)
 				.OnComplete(() => _hook.EnableCollider()));
                 
-			newSequence.Append(_fishingLine.BuildMovingSequence(0, movingUpDuration.GetValue, Ease.Linear)
+			newSequence.Append(_fishingLine.BuildMovingSequence(0, movingUpDuration.GetValue, ease)
 				.OnComplete(() => _hook.Release()));
 
 			return newSequence;
