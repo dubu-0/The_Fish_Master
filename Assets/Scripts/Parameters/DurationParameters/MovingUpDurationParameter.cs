@@ -9,7 +9,7 @@ namespace Parameters.DurationParameters
         
         protected override void Сorrelate()
         {
-            CurrentValue = DefaultValue * _lengthParameter.CurrentValue * 1 / _lengthParameter.DefaultValue;
+            CurrentValue = DefaultValue * _lengthParameter.CurrentValue * 0.01f;
             base.Сorrelate();
         }
     }

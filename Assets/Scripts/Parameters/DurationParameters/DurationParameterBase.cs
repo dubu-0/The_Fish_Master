@@ -13,6 +13,7 @@ namespace Parameters.DurationParameters
         private void OnEnable()
         {
             _lengthParameter.OnValueUpdate += Сorrelate;
+            Сorrelate();
         }
 
         private void OnDisable()

@@ -10,26 +10,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Добавил OfflineEarnings">
+    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Добавил рыбам тряску">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game Parameters/Length.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Parameters/Length.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game Parameters/MovingDownDuration.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Parameters/MovingDownDuration.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game Parameters/MovingUpDuration.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Parameters/MovingUpDuration.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game Parameters/Strength.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Parameters/Strength.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CircleFish.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CircleFish.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/SquareFish.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/SquareFish.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FishingRod/Fishing Rod.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FishingRod/Fishing Rod.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Controller/FisherMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Controller/FisherMan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Fish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Spawn/SpawnConstraints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Spawn/SpawnConstraints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/FishingLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/FishingLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/Hook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/Hook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Movement/HorizontalMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Movement/HorizontalMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/DurationParameterBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/DurationParameterBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingDownDurationParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingDownDurationParameter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingUpDurationParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingUpDurationParameter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/GameParameterBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/GameParameterBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/OfflineEarnings/OfflineEarningsParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/OfflineEarnings/OfflineEarningsParameter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/MoneyParameter/Money.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/MoneyParameter/Money.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/ParameterBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/ParameterBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/LengthParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/LengthParameter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,48 +43,52 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleEPOOutline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner/Api/CallbacksHolder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2.gen.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/Spawn/Pool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/State.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/AttackState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IdleState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/MovementState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ee480759f3d481d82ada245dc74f9fd13be00/f8/4096c790/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/Control/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4.gen.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEngine.TestRunner/Assertions/LogScope/LogScope.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ee480759f3d481d82ada245dc74f9fd13be00/af/e84c266c/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/b9/2583d81d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/treeview/TimelineDataSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Resources/DOTweenSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ee480759f3d481d82ada245dc74f9fd13be00/1e/43fdb3b4/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Game Parameters/MovingDownDuration.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Runtime/TrackAsset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/EditorTools/BoxTool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/EditorTools/PickingTool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de1f8ef4975b4eacbeb0accc1b22c9b02a000/03/497fb3bf/DOTween.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/EditorTools/SelectTool.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleEPOOutline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/EditorTools/MoveTool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2.gen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner/Api/CallbacksHolder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/EditorTools/PaintTool.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2.gen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/Spawn/Pool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@5.0.9/Runtime/SpriteSkin.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.12/Editor/Image.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/EditorTools/FillTool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/EditorTools/EraseTool.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/State.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/57/ab6aa5d0/ICollection`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/AttackState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IdleState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half2.gen.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@5.0.9/Runtime/SpriteSkinBatch.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Editor/Canvas/AssertionFailureOnOutputVertexCount.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/MovementState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/States/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int4.gen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ee480759f3d481d82ada245dc74f9fd13be00/f8/4096c790/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Fishing/Gear/Hook.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Spawn/ObjectCatcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../3D/RPG/RPG project/Assets/Scripts/RPG/Control/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint4.gen.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/int3.gen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEngine.TestRunner/Assertions/LogScope/LogScope.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ee480759f3d481d82ada245dc74f9fd13be00/af/e84c266c/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint3.gen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/b9/2583d81d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Spawn/PooledObjectBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/treeview/TimelineDataSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Editor/CanvasRenderer/ChangingHierarchyOfCanvasRenderer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ee480759f3d481d82ada245dc74f9fd13be00/1e/43fdb3b4/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Game Parameters/Length.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Ball/Ball.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Runtime/TrackAsset.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@5.0.9/IK/Runtime/Solver2DMenuAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3.gen.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Spawn/ObjectSpawner.cs" root0="SKIP_HIGHLIGHTING" />
@@ -194,7 +192,7 @@
       <workItem from="1642329161116" duration="3485000" />
       <workItem from="1642333365595" duration="7894000" />
       <workItem from="1642399701248" duration="12628000" />
-      <workItem from="1642412496818" duration="8680000" />
+      <workItem from="1642412496818" duration="10622000" />
     </task>
     <task id="LOCAL-00002" summary="Добавил крюк и возможность хукать рыбок">
       <created>1640540522078</created>
@@ -315,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642417180390</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Добавил рыбам тряску">
+      <created>1642422703129</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1642422703129</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +368,8 @@
     <MESSAGE value="Добавил UI и начисление денег, когда крюк ловит рыб" />
     <MESSAGE value="Добавил корреляцию длительностей и длины" />
     <MESSAGE value="Добавил OfflineEarnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил OfflineEarnings" />
+    <MESSAGE value="Добавил рыбам тряску" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил рыбам тряску" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

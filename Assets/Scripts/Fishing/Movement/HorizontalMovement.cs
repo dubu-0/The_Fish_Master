@@ -31,8 +31,8 @@ namespace Fishing.Movement
 
 		private Vector3 UpdateLookDirection(float deltaX)
 		{
-			var newScaleY = Mathf.Sign(deltaX) * Mathf.Abs(_currentLocalScale.y);
-			_currentLocalScale.y = newScaleY;
+			var newScaleX = Mathf.Sign(deltaX) * Mathf.Abs(_currentLocalScale.x);
+			_currentLocalScale.x = newScaleX;
 			return _currentLocalScale;
 		}
 	}

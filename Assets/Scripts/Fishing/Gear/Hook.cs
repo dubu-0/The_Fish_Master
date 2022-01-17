@@ -42,7 +42,7 @@ namespace Fishing.Gear
 		private void Catch([NotNull] Fish fish)
 		{
 			fish.transform.parent = transform;
-			fish.transform.localPosition = new Vector3(3, 0, 0);
+			fish.transform.localPosition = new Vector3(0, 0, 0);
 			fish.Stop();
 			fish.LookUp();
 			fish.StartShaking();
