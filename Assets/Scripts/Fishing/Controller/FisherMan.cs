@@ -26,6 +26,7 @@ namespace Fishing.Controller
 		public void StartFishing()
 		{
 			if (IsFishingStarted()) return;
+			
 			_fishingSequence = BuildNewSequence(Ease.Linear);
 		}
 
@@ -52,10 +53,12 @@ namespace Fishing.Controller
 		{
 			var newSequence = DOTween.Sequence();
 			
-			newSequence.Append(_fishingLine.BuildMovingSequence(-_lengthParameter.CurrentValue, _movingDownDuration.CurrentValue, ease)
+			newSequence
+				.Append(_fishingLine.BuildMovingSequence(-_lengthParameter.CurrentValue, _movingDownDuration.CurrentValue, ease)
 				.OnComplete(() => _hook.EnableCollider()));
                 
-			newSequence.Append(_fishingLine.BuildMovingSequence(0, _movingUpDuration.CurrentValue, ease)
+			newSequence
+				.Append(_fishingLine.BuildMovingSequence(0, _movingUpDuration.CurrentValue, ease)
 				.OnComplete(() => _hook.Release()));
 
 			return newSequence;

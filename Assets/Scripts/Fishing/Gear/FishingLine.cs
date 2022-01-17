@@ -8,16 +8,15 @@ namespace Fishing.Gear
 		public Sequence BuildMovingSequence(float endValue, float duration, Ease ease)
 		{
 			var movingSequence = DOTween.Sequence();
-			movingSequence.Join(DoLocalMoveY(transform, endValue, duration, ease));
+			movingSequence.Join(DoLocalMoveY(endValue, duration, ease));
 			return movingSequence;
 		}
 
-		private Tween DoLocalMoveY(Transform t, float endValue, float duration, Ease ease)
+		private Tween DoLocalMoveY(float endValue, float duration, Ease ease)
 		{
-			var transformTween = t
-				.DOLocalMoveY(endValue, duration)
-				.SetEase(ease);
-			
+			var transformTween = transform
+				.DOLocalMoveY(endValue, duration);
+
 			return transformTween;
 		}
 	}

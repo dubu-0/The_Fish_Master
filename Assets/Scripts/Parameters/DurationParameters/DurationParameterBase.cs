@@ -22,7 +22,7 @@ namespace Parameters.DurationParameters
 
         public override void ToDefault()
         {
-            Value = DefaultValue;
+            CurrentValue = DefaultValue;
             OnValueUpdate?.Invoke();
         }
 

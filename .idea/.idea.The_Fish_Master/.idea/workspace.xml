@@ -10,57 +10,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Добавил корреляцию длительностей и длины">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingDownDurationParameter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingUpDurationParameter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/GameParameterBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/LengthParameter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/OfflineEarnings.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/OfflineEarnings/OfflineEarningsParameter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/OfflineEarnings/OfflineEarningsParameter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/OfflineEarnings/PassedTimespan.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/OfflineEarnings/PassedTimespan.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/StrengthParameter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/MoneyParameter.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/MoneyParameter/MoneyUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/ParameterContainer.cs" afterDir="false" />
+    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Добавил OfflineEarnings">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game Parameters/Length.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Parameters/Length.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game Parameters/Money.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Parameters/Money.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game Parameters/MovingDownDuration.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Parameters/MovingDownDuration.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game Parameters/MovingUpDuration.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Parameters/MovingUpDuration.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game Parameters/Strength.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Parameters/Strength.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MoneyUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MoneyUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/MoneyParameter/MoneyUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Controller/FisherMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Controller/FisherMan.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Fish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Spawn/Pool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Spawn/Pool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Spawn/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Spawn/Spawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Spawn/SpawnConstraints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Fishes/Spawn/SpawnConstraints.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/FishingLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/FishingLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/FishingRod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/FishingRod.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/Hook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/Hook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Movement/HorizontalMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Movement/HorizontalMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Movement/HorizontalMovementByMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Movement/HorizontalMovementByMouse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/DurationBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/DurationParameterBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/DurationBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/DurationParameterBase.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/GameParameterBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/ParameterBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/GameParameterBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/ParameterBase.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/GameParametersContainer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/GameParametersContainer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/ParameterContainer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/Length.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/Length.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/LengthParameter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/Money.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/MoneyParameter/Money.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/Money.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/MoneyParameter/Money.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/MovingDownDuration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/MovingDownDuration.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingDownDurationParameter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/MovingUpDuration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/MovingUpDuration.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingUpDurationParameter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/Strength.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/GameParameterBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters/Strength.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/StrengthParameter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/DurationParameterBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/DurationParameterBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingDownDurationParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingDownDurationParameter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingUpDurationParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingUpDurationParameter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/GameParameterBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/GameParameterBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/OfflineEarnings/OfflineEarningsParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/OfflineEarnings/OfflineEarningsParameter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/MoneyParameter/Money.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/MoneyParameter/Money.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/ParameterBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/ParameterBase.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,9 +90,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ee480759f3d481d82ada245dc74f9fd13be00/1e/43fdb3b4/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../../Максим2/Documents/repos_unity/2D/Тестовые задания/Тестовое_задание_от_Максима_Крюкова/Assets/Scripts/Ball/Ball.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Runtime/TrackAsset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@5.0.9/IK/Runtime/Solver2DMenuAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/float3.gen.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Spawn/ObjectSpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Maksim/Documents/repos_unity/2D/Hypercasual/The Fish Master/The_Fish_Master/Assets/Scripts/Parameters/DurationParameters/DurationParameterBase.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -223,7 +194,7 @@
       <workItem from="1642329161116" duration="3485000" />
       <workItem from="1642333365595" duration="7894000" />
       <workItem from="1642399701248" duration="12628000" />
-      <workItem from="1642412496818" duration="3723000" />
+      <workItem from="1642412496818" duration="8680000" />
     </task>
     <task id="LOCAL-00002" summary="Добавил крюк и возможность хукать рыбок">
       <created>1640540522078</created>
@@ -330,7 +301,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642336908107</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Добавил OfflineEarnings">
+      <created>1642417172899</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1642417172899</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Добавил OfflineEarnings">
+      <created>1642417180390</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1642417180390</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +362,8 @@
     <MESSAGE value="Рефакторинг завершен" />
     <MESSAGE value="Добавил UI и начисление денег, когда крюк ловит рыб" />
     <MESSAGE value="Добавил корреляцию длительностей и длины" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил корреляцию длительностей и длины" />
+    <MESSAGE value="Добавил OfflineEarnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил OfflineEarnings" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

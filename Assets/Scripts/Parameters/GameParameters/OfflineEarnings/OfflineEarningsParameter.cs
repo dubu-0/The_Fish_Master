@@ -21,7 +21,7 @@ namespace Parameters.GameParameters.OfflineEarnings
         public void CalculateEarnings()
         {
             _passedTimespan.UpdateSecondsSinceGameEnabled();
-            EarnedWhenGameDisabled = Value * _multiplierForTesting * _passedTimespan.CalculateSecondsSinceLastDisabling();
+            EarnedWhenGameDisabled = CurrentValue * _multiplierForTesting * _passedTimespan.CalculateSecondsSinceLastDisabling();
 
             Debug.Log($"Earned: {EarnedWhenGameDisabled:N}");
         }

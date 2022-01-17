@@ -5,12 +5,11 @@ namespace Parameters
 {
     public abstract class ParameterBase : ScriptableObject
     {
-        [SerializeField] protected float Value;
+        [field: SerializeField] public float CurrentValue { get; protected set; }
 
         public abstract event Action OnValueUpdate;
 
         public abstract float DefaultValue { get; }
-        public float CurrentValue => Value;
 
         public abstract void ToDefault();
     }

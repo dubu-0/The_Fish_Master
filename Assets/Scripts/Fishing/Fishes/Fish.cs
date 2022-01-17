@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Fishing.Fishes.Spawn;
 using Fishing.Movement;
 using Parameters.MoneyParameter;
@@ -32,14 +33,20 @@ namespace Fishing.Fishes
 
 		public void IncreaseMoney(Money money) => money.IncreaseBy(_cost);
 		
-		public void SetLocalPosition(Vector3 newLocalPosition) => transform.localPosition = newLocalPosition;
-
-		public void SetNewParent(Transform newParent) => transform.parent = newParent;
-
 		public void Stop()
 		{
 			_isStopped = true;
 			_collider.enabled = false;
+		}
+
+		public void StartShaking()
+		{
+			transform.DOShakeRotation(5f).SetLoops(-1, LoopType.Yoyo);
+		}
+
+		public void LookUp()
+		{
+			transform.up = Vector3.up;
 		}
 
 		private void CreateHorizontalMovement()

@@ -16,7 +16,7 @@ namespace Parameters.GameParameters
 
         public override void ToDefault()
         {
-            Value = DefaultValue;
+            CurrentValue = DefaultValue;
             _cost = DefaultCost;
             OnValueUpdate?.Invoke();
         }
@@ -25,7 +25,7 @@ namespace Parameters.GameParameters
         {
             if (!_money.TryDecreaseBy(_cost)) return;
             
-            Value += value;
+            CurrentValue += value;
             _cost *= _costRateOfChange;
             OnValueUpdate?.Invoke();
         }

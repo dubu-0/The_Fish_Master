@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DG.Tweening;
 using Fishing.Fishes;
 using JetBrains.Annotations;
 using Parameters.MoneyParameter;
@@ -26,19 +27,25 @@ namespace Fishing.Gear
 			var fish = other.gameObject.GetComponent<Fish>();
 			if (fish == null) return;
 
-			Catch(fish, transform);
+			Catch(fish);
 		}
 
 		public int CaughtCount => _caught.Count;
 		public void EnableCollider() => _hookCollider.enabled = true;
 		public void DisableCollider() => _hookCollider.enabled = false;
-		public void Release() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
-		private void Catch([NotNull] Fish fish, Transform hook)
+		public void Release()
 		{
-			fish.SetNewParent(hook);
-			fish.SetLocalPosition(new Vector3(3, 0, 0));
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+			DOTween.KillAll();
+		}
+
+		private void Catch([NotNull] Fish fish)
+		{
+			fish.transform.parent = transform;
+			fish.transform.localPosition = new Vector3(3, 0, 0);
 			fish.Stop();
+			fish.LookUp();
+			fish.StartShaking();
 			fish.IncreaseMoney(_money);
 			_caught.Add(fish);
 		}

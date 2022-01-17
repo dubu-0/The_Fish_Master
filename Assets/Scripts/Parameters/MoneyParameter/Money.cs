@@ -12,22 +12,22 @@ namespace Parameters.MoneyParameter
 
         public override void ToDefault()
         {
-            Value = DefaultValue;
+            CurrentValue = DefaultValue;
             OnValueUpdate?.Invoke();
         }
 
         public void IncreaseBy(float value)
         {
-            Value += value;
+            CurrentValue += value;
             OnValueUpdate?.Invoke();
         }
 
         public bool TryDecreaseBy(float value)
         {
-            if (Value - value < 0)
+            if (CurrentValue - value < 0)
                 return false;
 
-            Value -= value;
+            CurrentValue -= value;
             OnValueUpdate?.Invoke();
             return true;
         }
