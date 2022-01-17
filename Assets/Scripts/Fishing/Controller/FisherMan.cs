@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using Fishing.Gear;
 using Parameters.DurationParameters;
 using Parameters.GameParameters;
@@ -18,12 +19,17 @@ namespace Fishing.Controller
 		
 		private Sequence _fishingSequence;
 
+		private void Start()
+		{
+			StartFishing();
+		}
+
 		private void Update()
 		{
 			StopFishing(when: HookHasMaximumFishes());
 		}
 
-		public void StartFishing()
+		private void StartFishing()
 		{
 			if (IsFishingStarted()) return;
 			

@@ -10,20 +10,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Добавил рыбам тряску">
+    <list default="true" id="889cbbef-2835-4a23-8434-8612cb784e98" name="Changes" comment="Добавил рыб, графику">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The_Fish_Master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CapsuleFish.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CircleFish.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/CircleFish.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/SquareFish.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fishes/SquareFish.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FishingRod/Fishing Rod.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FishingRod/Fishing Rod.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainScreen Canvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainScreen Canvas.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Movement/HorizontalMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Movement/HorizontalMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/DurationParameterBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/DurationParameterBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingUpDurationParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/DurationParameters/MovingUpDurationParameter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/LengthParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parameters/GameParameters/LengthParameter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Controller/FisherMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Controller/FisherMan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/Hook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fishing/Gear/Hook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +188,7 @@
       <workItem from="1642329161116" duration="3485000" />
       <workItem from="1642333365595" duration="7894000" />
       <workItem from="1642399701248" duration="12628000" />
-      <workItem from="1642412496818" duration="10622000" />
+      <workItem from="1642412496818" duration="12700000" />
     </task>
     <task id="LOCAL-00002" summary="Добавил крюк и возможность хукать рыбок">
       <created>1640540522078</created>
@@ -320,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642422703129</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Добавил рыб, графику">
+      <created>1642426580778</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1642426580778</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +372,8 @@
     <MESSAGE value="Добавил корреляцию длительностей и длины" />
     <MESSAGE value="Добавил OfflineEarnings" />
     <MESSAGE value="Добавил рыбам тряску" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил рыбам тряску" />
+    <MESSAGE value="Добавил рыб, графику" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил рыб, графику" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

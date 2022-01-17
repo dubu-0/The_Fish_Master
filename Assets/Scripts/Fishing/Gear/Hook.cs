@@ -12,6 +12,7 @@ namespace Fishing.Gear
 	public class Hook : MonoBehaviour
 	{
 		[SerializeField] private Money _money;
+		[SerializeField] private SceneSwitcher _sceneSwitcher;
 
 		private readonly List<Fish> _caught = new List<Fish>();
 		private Collider2D _hookCollider;
@@ -37,6 +38,7 @@ namespace Fishing.Gear
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 			DOTween.KillAll();
+			_sceneSwitcher.LoadNextScene();
 		}
 
 		private void Catch([NotNull] Fish fish)
