@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Fishing.Fishes.Spawn
 {
-	public sealed class Spawner : MonoBehaviour
+	public class Spawner : MonoBehaviour
 	{
 		[SerializeField] private SpawnConstraints _spawnConstraints;
 		[SerializeField] private List<PooledObjectBase> _prefabs;

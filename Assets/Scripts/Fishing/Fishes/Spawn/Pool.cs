@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Fishing.Fishes.Spawn
 {
-	public sealed class Pool
+	public class Pool
 	{
 		private readonly List<PooledObjectBase> _pooledObjects = new List<PooledObjectBase>();
 		

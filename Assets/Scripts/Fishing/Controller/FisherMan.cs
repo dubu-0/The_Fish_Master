@@ -1,15 +1,20 @@
 ﻿using DG.Tweening;
 using Fishing.Gear;
-using GameParameters;
+using Parameters.DurationParameters;
+using Parameters.GameParameters;
 using UnityEngine;
+using FishingLine = Fishing.Gear.FishingLine;
 
 namespace Fishing.Controller
 {
-	public sealed class FisherMan : MonoBehaviour
+	public class FisherMan : MonoBehaviour
 	{
 		[SerializeField] private FishingLine _fishingLine;
 		[SerializeField] private Hook _hook;
-		[SerializeField] private GameParametersContainer _gameParametersContainer;
+		[SerializeField] private MovingDownDurationParameter _movingDownDuration;
+		[SerializeField] private MovingUpDurationParameter _movingUpDuration;
+		[SerializeField] private LengthParameter _lengthParameter;
+		[SerializeField] private StrengthParameter _strengthParameter;
 		
 		private Sequence _fishingSequence;
 
@@ -21,7 +26,7 @@ namespace Fishing.Controller
 		public void StartFishing()
 		{
 			if (IsFishingStarted()) return;
-			_fishingSequence = BuildNewSequence(DOTween.Sequence(), Ease.InSine);
+			_fishingSequence = BuildNewSequence(Ease.Linear);
 		}
 
 		private void StopFishing(bool when)
@@ -40,20 +45,17 @@ namespace Fishing.Controller
 
 		private bool HookHasMaximumFishes()
 		{
-			var strength = _gameParametersContainer.GetParameterByType<Strength>();
-			return _hook.CaughtCount >= strength.GetValue;
+			return _hook.CaughtCount >= _strengthParameter.CurrentValue;
 		}
 
-		private Sequence BuildNewSequence(Sequence newSequence, Ease ease)
+		private Sequence BuildNewSequence(Ease ease)
 		{
-			var length = _gameParametersContainer.GetParameterByType<Length>();
-			var movingDownDuration = _gameParametersContainer.GetParameterByType<MovingDownDuration>();
-			var movingUpDuration = _gameParametersContainer.GetParameterByType<MovingUpDuration>();
+			var newSequence = DOTween.Sequence();
 			
-			newSequence.Append(_fishingLine.BuildMovingSequence(-length.GetValue, movingDownDuration.GetValue, ease)
+			newSequence.Append(_fishingLine.BuildMovingSequence(-_lengthParameter.CurrentValue, _movingDownDuration.CurrentValue, ease)
 				.OnComplete(() => _hook.EnableCollider()));
                 
-			newSequence.Append(_fishingLine.BuildMovingSequence(0, movingUpDuration.GetValue, ease)
+			newSequence.Append(_fishingLine.BuildMovingSequence(0, _movingUpDuration.CurrentValue, ease)
 				.OnComplete(() => _hook.Release()));
 
 			return newSequence;

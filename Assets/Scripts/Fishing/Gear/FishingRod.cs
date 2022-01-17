@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Fishing.Gear
 {
-	public sealed class FishingRod : MonoBehaviour
+	public class FishingRod : MonoBehaviour
 	{
 		private HorizontalMovementByMouse _horizontalMovementByMouse;
 

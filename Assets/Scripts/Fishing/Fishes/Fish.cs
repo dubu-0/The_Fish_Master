@@ -1,12 +1,12 @@
 using Fishing.Fishes.Spawn;
 using Fishing.Movement;
-using GameParameters;
+using Parameters.MoneyParameter;
 using UnityEngine;
 
 namespace Fishing.Fishes
 {
 	[RequireComponent(typeof(Collider2D))]
-	public sealed class Fish : PooledObjectBase
+	public class Fish : PooledObjectBase
 	{
 		[SerializeField] private float maxSpeed;
 		[SerializeField] private float _cost;

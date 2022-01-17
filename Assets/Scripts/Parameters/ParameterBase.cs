@@ -1,15 +1,16 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GameParameters
+namespace Parameters
 {
-    public abstract class GameParameterBase : ScriptableObject
+    public abstract class ParameterBase : ScriptableObject
     {
         [SerializeField] protected float Value;
 
         public abstract event Action OnValueUpdate;
 
-        public float GetValue => Value;
+        public abstract float DefaultValue { get; }
+        public float CurrentValue => Value;
 
         public abstract void ToDefault();
     }

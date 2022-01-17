@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using Fishing.Fishes;
-using GameParameters;
 using JetBrains.Annotations;
+using Parameters.MoneyParameter;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Fishing.Gear
 {
 	[RequireComponent(typeof(Collider2D))]
-	public sealed class Hook : MonoBehaviour
+	public class Hook : MonoBehaviour
 	{
 		[SerializeField] private Money _money;
 

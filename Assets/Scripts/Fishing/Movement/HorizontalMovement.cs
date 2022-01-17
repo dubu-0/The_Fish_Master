@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Fishing.Movement
 {
-	public sealed class HorizontalMovement
+	public class HorizontalMovement
 	{
 		private readonly float _halfScreenWidth;
 		private Vector3 _currentLocalScale;

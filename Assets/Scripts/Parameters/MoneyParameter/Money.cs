@@ -1,14 +1,14 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GameParameters
+namespace Parameters.MoneyParameter
 {
     [CreateAssetMenu(menuName = "Create Money", fileName = "Money", order = 0)]
-    public class Money : GameParameterBase
+    public class Money : ParameterBase
     {
         public override event Action OnValueUpdate;
 
-        private float DefaultValue => 3000;
+        public override float DefaultValue => 3000;
 
         public override void ToDefault()
         {

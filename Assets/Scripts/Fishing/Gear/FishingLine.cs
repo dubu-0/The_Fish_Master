@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Fishing.Gear
 {
-	public sealed class FishingLine : MonoBehaviour
+	public class FishingLine : MonoBehaviour
 	{
 		public Sequence BuildMovingSequence(float endValue, float duration, Ease ease)
 		{

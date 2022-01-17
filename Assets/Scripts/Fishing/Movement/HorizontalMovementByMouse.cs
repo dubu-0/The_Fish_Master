@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Fishing.Movement
 {
-	public sealed class HorizontalMovementByMouse
+	public class HorizontalMovementByMouse
 	{
 		private readonly Camera _camera;
 		private Vector3 _currentPosition;

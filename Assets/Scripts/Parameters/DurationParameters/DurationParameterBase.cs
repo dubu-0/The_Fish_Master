@@ -1,24 +1,23 @@
 ﻿using System;
-using System.Diagnostics;
+using Parameters.GameParameters;
 using UnityEngine;
 
-namespace GameParameters
+namespace Parameters.DurationParameters
 {
-    public abstract class DurationBase : GameParameterBase
+    public abstract class DurationParameterBase : ParameterBase
     {
-        [SerializeField] protected Length Length;
+        [SerializeField] protected LengthParameter _lengthParameter;
 
         public override event Action OnValueUpdate;
-        protected abstract float DefaultValue { get; }
 
         private void OnEnable()
         {
-            Length.OnValueUpdate += Сorrelate;
+            _lengthParameter.OnValueUpdate += Сorrelate;
         }
 
         private void OnDisable()
         {
-            Length.OnValueUpdate -= Сorrelate;
+            _lengthParameter.OnValueUpdate -= Сorrelate;
         }
 
         public override void ToDefault()

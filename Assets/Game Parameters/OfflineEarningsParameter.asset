@@ -9,10 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3816dea09cf146f6a652c933cb720e47, type: 3}
-  m_Name: Length
+  m_Script: {fileID: 11500000, guid: 72c2b463542a46e59b8be9b77257cdc3, type: 3}
+  m_Name: OfflineEarningsParameter
   m_EditorClassIdentifier: 
-  Value: 100
+  Value: 75
   _money: {fileID: 11400000, guid: 719102f371c65af44a7e3e62df066e97, type: 2}
-  _cost: 100
-  _costRateOfChange: 1.1
+  _cost: 2400
+  _costRateOfChange: 2
+  _passedTimespan:
+    _secondsSinceGameEnabled: 38745.965
+    _secondsSinceGameDisabled: 38753.95
+  _multiplierForTesting: 1

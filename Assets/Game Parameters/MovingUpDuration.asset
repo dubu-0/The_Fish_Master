@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee7e5f0047a45638bb40e9f64059c2b, type: 3}
   m_Name: MovingUpDuration
   m_EditorClassIdentifier: 
-  Value: 12
-  Length: {fileID: 11400000, guid: 0df0f1db9f0c0104cab631070279ca21, type: 2}
+  Value: 8.5
+  _lengthParameter: {fileID: 11400000, guid: 0df0f1db9f0c0104cab631070279ca21, type: 2}

@@ -15,4 +15,4 @@ MonoBehaviour:
   Value: 3
   _money: {fileID: 11400000, guid: 719102f371c65af44a7e3e62df066e97, type: 2}
   _cost: 200
-  _costRateOfChange: 1.3
+  _costRateOfChange: 1.2

@@ -1,23 +1,22 @@
 ﻿using System;
+using Parameters.MoneyParameter;
 using UnityEngine;
 
-namespace GameParameters
+namespace Parameters.GameParameters
 {
-    [CreateAssetMenu(menuName = "Create Strength", fileName = "Strength", order = 0)]
-    public class Strength : GameParameterBase
+    public abstract class GameParameterBase : ParameterBase
     {
         [SerializeField] private Money _money;
         [SerializeField] private float _cost;
         [SerializeField, Range(1.1f, 2f)] private float _costRateOfChange;
 
         public override event Action OnValueUpdate;
-        
-        private float DefaultStrength => 3;
-        private float DefaultCost => 200;
+
+        protected abstract float DefaultCost { get; }
 
         public override void ToDefault()
         {
-            Value = DefaultStrength;
+            Value = DefaultValue;
             _cost = DefaultCost;
             OnValueUpdate?.Invoke();
         }
